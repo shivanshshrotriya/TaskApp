@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/dim"
+        android:layout_centerHorizontal="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/text_title_tv"
+        android:text="New TODO List"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_below="@id/text_title_tv"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/title_et"
+        android:background="@drawable/rectangle"
+        android:layout_below="@id/title_txt"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/upload_image_tv"
+        android:layout_below="@id/title_et"
+        android:text="Upload Image"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/upload_image"
+        android:background="@drawable/rectangle"
+        android:layout_below="@id/upload_image_tv"
+        android:layout_margin="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:inputType="none"
+        android:focusable="false"
+        android:editable="false"
+        android:paddingBottom="5dp"
+        android:hint="Select Image"
+        android:paddingLeft="5dp"
+        android:drawableRight="@drawable/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+     <TextView
+         android:id="@+id/description_txt"
+         android:layout_below="@id/upload_image"
+         android:text="Description"
+         android:textStyle="bold"
+         android:paddingLeft="10dp"
+         android:textSize="20sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+    <EditText
+        android:background="@drawable/rectangle"
+        android:id="@+id/description_et"
+        android:layout_below="@id/description_txt"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter Description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:background="@drawable/rectangle"
+        android:text="Cancle"
+        android:layout_toLeftOf="@id/dim"
+        android:layout_margin="5dp"
+        android:layout_below="@id/description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:background="@drawable/rectangle"
+        android:id="@+id/save_btn"
+        android:text="Save"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/dim"
+        android:layout_below="@id/description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
